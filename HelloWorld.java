@@ -1,10 +1,13 @@
-package prelim.exercise;
-
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello World");
-        System.out.println("I am Jeus");
-        System.exit(0);
+        Greeting greeting = new Greeting();
+        System.out.println(greeting.sayHello());
+    }
+}
 
-    }//end of the main method
-}//end of class
+// Added method for greeting
+class Greeting {
+    public String sayHello() {
+        return "Hello, world!";
+    }
+}
